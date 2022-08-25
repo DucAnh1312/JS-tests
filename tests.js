@@ -41,7 +41,7 @@ class Snapshot {
  
 function numberOfItems(arr, item) {
     // Write the code that goes here
-    var result = 0;
+    let result = 0;
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] instanceof Array) {
         result += numberOfItems(arr[i], item);
@@ -62,7 +62,7 @@ function numberOfItems(arr, item) {
   console.log(numberOfItems(arr, 25));
   console.log(numberOfItems(arr, "apple"));
 //////////////////////////////////////////////////////////////////////////////////////////
-  //Vectors
+//Vectors
  
 function findShortest(vectors) {
     // Write the code that goes here
@@ -91,10 +91,10 @@ function findShortest(vectors) {
   var shortest = findShortest(vectors);
   console.log(shortest);
 ////////////////////////////////////////////////////////////////////////////////////////// 
-  //Hobbies
+//Hobbies
  
   function findAllHobbyists(hobby, hobbies) {
-    var result = []
+    let result = []
     for (let person in hobbies) {
         if (hobbies[person].includes(hobby)) {
           result.push(person);
